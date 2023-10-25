@@ -1,0 +1,17 @@
+@url = http://localhost:8080/api
+
+###
+
+POST {{url}}/login HTTP/1.1
+Content-Type: application/json
+
+{
+   "username": "john@smith.com",
+   "password": "P@ssw0rd!"
+}
+
+### 
+
+POST {{url}}/refresh-token HTTP/1.1
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJib2FyZC1nYW1lcy1hcGkiLCJzdWIiOiJqb2huQHNtaXRoLmNvbSIsInJvbGVzIjpbIlVTRVIiXSwidXNlcl9pZCI6MSwiZXhwIjoxNjk3MDQyMTUyfQ.mHUjCjYes40m0B6uZMUe2U4rlP6CVYEngqM1L1G_mWs
